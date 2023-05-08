@@ -1,0 +1,305 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  h3 {
+    color: white;
+  }
+  
+  h4,
+  h5 {
+    color: white;
+    text-shadow: 1.5px 1.5px 4px black;
+  }
+  
+  header {
+    background-color: white;
+    border-bottom: 5px solid gray;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+  }
+  main {
+    display: flex;
+  }
+  
+  .card {
+    border: 0;
+  }
+  
+  #courseModalLabel {
+    color: black;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  .card-body {
+    background-image: linear-gradient(white, white);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+    box-shadow: 0px 15px 20px -3px black !important;
+  }
+  
+  .btn {
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .modal.fade .modal-dialog {
+    width: 40%;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+  }
+  
+  #modalButton {
+    border: 2px solid black;
+    color: black;
+  }
+  
+  #modalButton:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #btn_logout,
+  #studentRoster {
+    background-color: transparent;
+    border-bottom: 3px solid white;
+  }
+  
+  .album {
+    display: flex;
+  }
+  
+  .container-fluid {
+    margin-left: 220px;
+    margin-right: 220px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #26394e;
+  }
+  
+  #menu {
+    height: 100%;
+    position: fixed;
+    background-color: #184a7e;
+    width: 200px;
+    transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(-100%);
+    left: 60px;
+  }
+  
+  #menu.expanded {
+    transform: translateX(0%);
+    left: 0px;
+  }
+  
+  .menu-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  #blob {
+    top: 0;
+    z-index: -1;
+    right: 60px;
+    transform: translateX(100%);
+    height: 100%;
+    position: absolute;
+  }
+  
+  #blob-path {
+    height: 100%;
+    fill: #184a7e;
+  }
+  
+  .hamburger {
+    right: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  
+  .hamburger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .hamburger .line:nth-child(2) {
+    top: 50%;
+    margin-top: -2px;
+  }
+  
+  .hamburger .line:nth-child(3) {
+    bottom: 0;
+  }
+  
+  h1 {
+    position: fixed;
+    right: 0;
+    margin: 0;
+  }
+  
+  .menu-list {
+    padding: 0;
+    list-style: none;
+    width: 50%;
+    margin-left: 20%;
+    position: absolute;
+    top: 20px;
+  }
+  
+  .menu-list,
+  .menu-item {
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  li {
+    border-bottom: 3px solid white;
+    text-align: center;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgba(134, 143, 147, 0.675);
+  }
+  
+  footer {
+    color: white;
+  }
+  
+  #assignments,
+  #studentNames,
+  #rosterCourse {
+    color: black;
+    background-color: white;
+  }
+  
+  .roster-student,
+  .roster-grade,
+  .roster-course {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+    border: 0;
+  }
+  
+  #grades,
+  #finalGrade,
+  #assignment1Grade {
+    background-color: #184a7e;
+    color: white;
+  }
+  
+  #students,
+  #courseName,
+  #overallGrade {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  
+  .upload-drop-zone {
+    height: 300px;
+    border-width: 2px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  /* skin.css Style*/
+  .upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 300px;
+    text-align: center;
+  }
+  .upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+  }
+  .assignment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 2rem;
+    top: 20;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .white-label {
+    color: white;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="date"],
+  input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0069d9;
+  }
+  .create-assignment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    font-size: 32px;
+    color: white;
+  }
+  

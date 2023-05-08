@@ -26,11 +26,17 @@ var uri = "mongodb+srv://eebalboni:j3Am4vgTXuRUufCf@cluster0.shlik9e.mongodb.net
 
 const Student = require("./models/student");
 
+//const Professor = require("./models/professor");
 app.use(passport.initialize());
 
 passport.use(new LocalStrategy(Student.authenticate())); //user.authenticated will be exported by  user model it will use passport-user-mongoose
 passport.serializeUser(Student.serializeUser());
 passport.deserializeUser(Student.deserializeUser());
+
+
+/* passport.use(new LocalStrategy(Professor.authenticate())); //user.authenticated will be exported by  user model it will use passport-user-mongoose
+passport.serializeUser(Professor.serializeUser());
+passport.deserializeUser(Professor.deserializeUser()); */
 
 mongoose
   .connect(uri, { useNewUrlParser: true })
